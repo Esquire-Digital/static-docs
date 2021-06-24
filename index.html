@@ -17,6 +17,12 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="app"></div>
@@ -26,9 +32,17 @@
         repo: "https://github.com/Esquire-Digital/static",
         logo: "/_media/logo.png",
         themeColor: "#2496c3",
+        loadSidebar: true,
+        subMaxLevel: 10,
       };
     </script>
+    <style>
+      * {
+        font-family: Montserrat, sans-serif;
+      }
+    </style>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
   </body>
 </html>
