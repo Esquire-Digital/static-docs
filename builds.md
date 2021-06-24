@@ -16,7 +16,7 @@ Every time content is changed, the site will have to be rebuilt to reflect the n
 - Changing a category's information
 - Menu changes
 
-Sometimes it's necessary to trigger a build manually. To trigger a build and deploy a site manually, you can easily do so by hitting the `Deploy Website` button in the admin bar:
+Sometimes it's necessary to trigger a build manually. You can easily trigger a build and deploy a site manually by hitting the `Deploy Website` button in the admin bar:
 
 ![Deploy Button](/_media/deploying.png)
 
