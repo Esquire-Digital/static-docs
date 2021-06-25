@@ -28,7 +28,7 @@ Unlike normal WordPress sites, you cannot instantly see your changes live; they 
 
 - **Success** - A previous build has successfully concluded and has been **published**. Any changes made should be live.
 
-- **Building** - A build has been triggered and is currently underway. During this time, edits that were made before the current build will not be visible on the website, as the pages are being rebuilt. Builds can take anything from under a minute, up to 10 minutes to complete.
+- **Building** - A build has been triggered and is currently underway. During this time, edits that were made after the last build will not be visible on the website, as the pages are currently being rebuilt. Builds can take anything from under a minute, to up to 10 minutes to complete.
 
 - **Canceled** - A build has been canceled. This can only be done by a developer, and likely indicates a developer is currently working on the site. It is best to confer with a developer about the reason for a `canceled` status before triggering any new builds.
 
