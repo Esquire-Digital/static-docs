@@ -2,10 +2,12 @@
   - [Overview](README.md)
   - [How It Works](how-it-works.md)
 - **Content Management**
-  - [Making Edits](making-edits.md)
-  - [Builds](builds.md)
+  - [Making Edits](content-management/making-edits.md)
+  - [Builds](content-management/builds.md)
 - **SEO**
-  - [Introduction](seo.md)
-  - [Schema](schema.md)
-  - [Meta Data](meta.md)
-  - [Crawler Appearance](crawlers.md)
+  - [Introduction](seo/introduction.md)
+  - [Schema](seo/schema.md)
+  - [Meta Data](seo/meta.md)
+  - [Crawler Appearance](seo/crawlers.md)
+- **Development**
+  - [Setup](development/setup.md)

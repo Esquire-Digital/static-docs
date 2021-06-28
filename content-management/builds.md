@@ -6,7 +6,7 @@ This means that changes you make will not be reflected by the site immediately, 
 
 ## Triggering Builds
 
-Every time content is changed, the site will have to be rebuilt to reflect the new changes. Sites are set to **automatically rebuild** after the following actions:
+Every time content is changed the site will have to be rebuilt to reflect the new changes. Sites are set to **automatically rebuild** after the following actions:
 
 - Editing a page (content, fields or anything else on a page)
 - Editing a blog post
