@@ -2,7 +2,7 @@
 
 On regular WordPress sites, Yoast will generate XML sitemaps automatically. By decoupling, Yoast no longer has control over generating sitemaps, and they instead have to be generated each build along with the pages.
 
-By default, **all published pages and posts** are included in the sitemap. Even if a page is restricted from indexing, it will still appear in the sitemap. To restrict the page from indexing, the page includes an appropriate meta tag (see [meta data section](meta.md)).
+By default, **all published pages and posts** are included in the sitemap. Even if a page is restricted from indexing, it will still appear in the sitemap. To restrict the page from indexing, the page includes an appropriate meta tag (see [meta data section](seo/meta.md)).
 
 ### Location
 
