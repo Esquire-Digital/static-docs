@@ -1,7 +1,11 @@
 - **About**
   - [Overview](README.md)
   - [How It Works](how-it-works.md)
-- **Content Management & SEO**
+- **Content Management**
   - [Making Edits](making-edits.md)
   - [Builds](builds.md)
-  - [SEO](seo.md)
+- **SEO**
+  - [Introduction](seo.md)
+  - [Schema](schema.md)
+  - [Meta Data](meta.md)
+  - [Crawler Appearance](crawlers.md)
