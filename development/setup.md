@@ -26,3 +26,9 @@ Unix:
 ```sh
 bash <(curl -Ls https://gist.githubusercontent.com/RHartman99/1cdb30838cda19a2b00e36239f120fa0/raw/0577138e45d57b81e5e8f6869f616f73977c9e18/setup.sh)
 ```
+
+Windows (Powershell):
+
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/RHartman99/1cdb30838cda19a2b00e36239f120fa0/raw/0577138e45d57b81e5e8f6869f616f73977c9e18/setup.sh'))
+```
