@@ -1,0 +1,19 @@
+.icon  {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 500px) {
+  .icon {
+    margin-left: 0;
+    transform: none;
+    float: left;
+    margin-right: 2rem;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .diagram {
+    float: left;
+  }
+}
