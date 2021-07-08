@@ -19,7 +19,7 @@ Install and enable all plugins in the above list. JAMstack deployments and Headl
 
 ### Theme
 
-Editors should be able to navigate the WordPress front-end as they normally do to make editing pages easier. Install the theme specially made for editors and developers to work with static sites by downloading the most recent [release](https://github.com/Esquire-Digital/static-backend/releases) archive called `esquire-static.zip`. Unzip the archive to the `wp-content/themes/esquire-static` folder in the WordPress install. Enable the theme, and if everything was done correctly, you should be greeted with the splash page on the WordPress front-end.
+Editors should be able to navigate the WordPress front-end as they normally do to make editing pages easier. Install the theme specially made for editors and developers to work with static sites by downloading the most recent [release](https://github.com/Esquire-Digital/static-backend/releases) archive called `esquire-static.zip`. Upload the theme zip through WordPress's theme installer, or unzip the archive in the `wp-content/themes` folder. Enable the theme, and if everything was done correctly, you should be greeted with the splash page on the WordPress front-end.
 
 ![Theme View](../_media/theme.png)
 

@@ -13,8 +13,9 @@
   - [Overview](development/overview.md)
   - [Environment Setup](development/setup.md)
   - [Getting Started](development/getting-started.md)
-  <!-- - [Partials & Components]()
-  - [Pages]()
+  - [Partials & Components](development/partials-components.md)
+  - [Common Errors](development/gotchas.md)
+    <!-- - [Pages]()
   - [SEO]()
   - [Deployments]()
   - [Launch Checklist]() -->
