@@ -8,7 +8,7 @@ The recommended text editor, especially for the work you'll do with Esquire Digi
 
 ## VSCode Extensions
 
-The below extensions are _greatly_ recommended to ensure code standards are maintained, and ease your development process:
+The below extensions are _greatly_ recommended to ensure code standards are maintained, and to ease your development process:
 
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) - Automatically closes HTML or JSX tags when typing them out
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) - Automatically edits both the closing and opening HTML or JSX tags when renaming them
@@ -42,9 +42,9 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubuserco
 Esquire Digital Static uses Gatsby.js as its static site generator, and Netlify as a host. As such, you'll want to install the following:
 
 - [Node.js](/development/setup?id=nodejs) (v12.13 or newer)
-- Git
-- Netlify CLI
-- Esquire CLI (optional)
+- [Git](/development/setup?id=git)
+- [Netlify CLI](/development/setup?id=netlify-cli)
+- [Esquire CLI](/development/setup?id=esquire-cli) (optional)
 
 ### Node.js
 

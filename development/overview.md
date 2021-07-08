@@ -1,6 +1,6 @@
 ## Background Knowledge
 
-This documentation only explains the novelty of building sites using Esquire Digital Static, and assumes you are comfortable with topics:
+This documentation only explains the novelty of building sites using Esquire Digital Static, and assumes you are comfortable with the below topics:
 
 - [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS) (CSS)
 - [HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML) (HTML)
@@ -9,6 +9,7 @@ This documentation only explains the novelty of building sites using Esquire Dig
 - [Node.js](https://nodejs.org/en/about/) and [npm](https://docs.npmjs.com/about-npm)
 - [Basic HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) (how resources are transferred when loading a page and basic HTTP requests)
 - WordPress development
+- FTP and sFTP
 
 You also must be at least familiar with these topics as well:
 
@@ -21,7 +22,3 @@ As mentioned in the [how it works](../how-it-works.md) section, Esquire Digital 
 Below is a thousand foot perspective of how the entire system works; from editing content, to generating pages, to publishing them to the internet.
 
 ![Architecture Infographic](../_media/architecture-horiz.png)
-
-### WordPress
-
-The WordPress install maintains a database of content that editors can edit and publish as they need. By using a plugin called WPGraphQL, we expose this content for easy querying.

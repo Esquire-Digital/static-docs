@@ -12,9 +12,9 @@
 - **Development**
   - [Overview](development/overview.md)
   - [Environment Setup](development/setup.md)
-  - [Getting Started]()
-  - [Partials & Components]()
+  - [Getting Started](development/getting-started.md)
+  <!-- - [Partials & Components]()
   - [Pages]()
   - [SEO]()
   - [Deployments]()
-  - [Launch Checklist]()
+  - [Launch Checklist]() -->
