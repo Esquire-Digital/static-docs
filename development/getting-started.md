@@ -10,7 +10,7 @@ These plugins are _required_ for EDS to function and must be installed:
 - <input type="checkbox"> <a href="https://wordpress.org/plugins/wordpress-seo/">YoastSEO</a> adds valuable SEO editors and generation
 - <input type="checkbox"> <a href="https://wordpress.org/plugins/wp-gatsby/">WPGatsby</a> adds core functionality for Gatsby
 - <input type="checkbox"> <a href="https://wordpress.org/plugins/wp-jamstack-deployments/">JAMstack Deployments</a> adds support for triggering Netlify builds
-- <input type="checkbox"> <a href="https://wordpress.org/plugins/wp-graphql/">Headless Mode</a> automatically redirects non-authenticated users to the front-end. Essential to prevent crawlers from crawling the WordPress front-end.
+- <input type="checkbox"> <a href="https://wordpress.org/plugins/headless-mode/">Headless Mode</a> automatically redirects non-authenticated users to the front-end. Essential to prevent crawlers from crawling the WordPress front-end.
 - <input type="checkbox"> <a href="https://wordpress.org/plugins/wp-graphql/">WPGraphQL</a> allows EDS to query data through GraphQL
 - <input type="checkbox"> <a href="https://wordpress.org/plugins/add-wpgraphql-seo/">WPGraphQL Yoast SEO Addon</a> adds Yoast SEO data to GraphQL
 - <input type="checkbox"> <a href="https://www.wpgraphql.com/acf/">WPGraphQL for Advanced Custom Fields</a> adds custom fields to GraphQL schema
