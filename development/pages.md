@@ -60,7 +60,7 @@ You can create a new component easily by running this Esquire CLI command **from
 esquire component ComponentName
 ```
 
-Be sure that your component names are always **capitalized** and not snake-case (componentName). This is just a React standard that will make your directories and code more readable. The newly created file will have the boilerplate code needed to get started developing the component:
+Be sure that your component names are always **capitalized** and not camel case (componentName). This is just a React standard that will make your directories and code more readable. The newly created file will have the boilerplate code needed to get started developing the component:
 
 ```js
 import React from "react";

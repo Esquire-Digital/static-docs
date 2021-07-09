@@ -2,7 +2,7 @@
 
 If you're not familiar with styled components and tailwind, the way we style components may seem alien. Once you become comfortable with the syntax, you will learn to love the flexibility CS in JS provides, and the easy shortcuts twin.macro provide.
 
-twin.macro is an excellent package that allows us to use [tailwindcss](https://tailwindcss.com/docs) with styled components. If you are not familiar with tailwind, it is a way to write _lots_ of CSS with minimal lines of code. For a lot of components, styling can take just one line! Tailwind translates CSS rules into simple class names. For example, to get `border-radius: 50%;`, you would write `rounded-full`. For example, if I just wanted a simple styled heading, here is the difference in code length:
+twin.macro is an excellent package that allows us to use [tailwindcss](https://tailwindcss.com/docs) with styled components. If you are not familiar with tailwind, it is a way to write _lots_ of CSS with minimal lines of code. For a lot of components, styling can take just one line! Tailwind translates CSS rules into simple class names. For example, to get `border-radius: 50%;`, you would write `rounded-full`. If I just wanted a simple styled heading, here is the difference in code length:
 
 ```js
 import tw, { styled } from "twin.macro";
@@ -140,7 +140,7 @@ module.exports = {
 }
 ```
 
-## Add Fonts
+## Adding Fonts
 
 To add more Google fonts, edit the plugins array in `gatsby-config.js` to include the family and variants you need under `gatsby-plugin-webfonts`:
 
