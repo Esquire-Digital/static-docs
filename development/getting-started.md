@@ -74,7 +74,7 @@ npm install
 npm start
 ```
 
-You should see Gatsby generating pages and content without errors. Gatsby can have _very_ ambiguous errors if you did not set up the WordPress URL correctly. See [common errors](#) if you run into one.
+You should see Gatsby generating pages and content without errors. Gatsby can have _very_ ambiguous errors if you did not set up the WordPress URL correctly. See [common errors](development/gotchas) if you run into one.
 
 Lastly, you should install the included Esquire CLI to make your life easier:
 
