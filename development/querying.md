@@ -101,4 +101,99 @@ GraphQL cannot, however, parse logic. For instance, you cannot query a field gro
 
 ## Menus
 
-GraphQL needs to know what menus to query.
+GraphQL needs to know what menus you want to query, and does this by checking the menu locations added by the theme. To add a new menu, for example a `Spanish Menu`, locate your local WordPress theme directory. Edit the function `nextlevel_menus` in `library/setup.php` to reflect your new menu location:
+
+```js
+function nextlevel_menus()
+{
+  register_nav_menus(
+    array(
+      'main-menu' => __('Main Menu'),
+      'sidebar-menu' => __('Sidebar Menu'),
+      'location-menu' => __('Location Menu'),
+      'spanish-menu' => __('Spanish Menu') // A new location for a spanish menu
+    )
+  );
+}
+```
+
+Upload this file over FTP and overwrite the already existing `setup.php` file in the WordPress theme. Now you can add a menu in the WordPress dashboard and set its location to `Spanish Menu`.
+
+Gatsby heavily caches menues, because they take a long time to parse and query. To see your new changes, stop the development environment if it is running, and run:
+
+```sh
+npm run clean
+npm start
+```
+
+This will destroy the Gatsby cache and re-query menus. You should now be able to query your menu:
+
+```graphql
+{
+  query {
+    wpMenu(locations: { eq: SPANISH_MENU }) {
+      menuItems {
+        nodes {
+          path
+          label
+          id
+          parentId
+        }
+      }
+    }
+  }
+}
+```
+
+## Posts and Pages
+
+Posts and pages have the querying done out of the box. The query is done in the `pageQuery` export:
+
+```js
+export const pageQuery = graphql`
+  query ($id: String!) {
+    wpPage(id: { eq: $id }) {
+      title
+      ...SEO
+    }
+  }
+`;
+```
+
+Breaking this down, Gatsby scans all page files for an export called `pageQuery`. When creating a page using this file, it will pass the ID of the page to the query. That's why the query is accepting a parameter, `$id` that must be the type `String`. The query then finds the page that has an id equal to the page's id passed by Gatsby. This is how Gatsby builds pages; it passes the page query the page's ID, so that you can query that page's data.
+
+Often, you'll want the content of the page or even some custom fields. To do that, just add to the page query like any normal query:
+
+```js
+export const pageQuery = graphql`
+  query ($id: String!) {
+    wpPage(id: { eq: $id }) {
+      title
+      content
+      fieldGroup {
+        fieldName
+      }
+      ...SEO
+    }
+  }
+`;
+```
+
+Posts are no different to Gatsby and behave the same. To Gatsby, you are simply building another page, it being a post has no distinction. The only difference is the pageQuery will find the `wpPost` with a matching id, instead of the `wpPage`:
+
+```js
+export const pageQuery = graphql`
+  query ($id: String!) {
+    wpPost(id: { eq: $id }) {
+      title
+      content
+      fieldGroup {
+        fieldName
+      }
+      ...PostSEO
+    }
+  }
+`;
+```
+
+This is because WordPress differentiates posts from pages, and so GraphQL must also.
